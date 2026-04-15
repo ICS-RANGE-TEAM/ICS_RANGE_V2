@@ -1,0 +1,25 @@
+Tu travailles dans /home/kakashi_/ICSHUB/viewer3d-station-b.
+
+Objectif:
+Refondre visuellement le viewer 3D Station B pour qu'il ressemble beaucoup plus à une vraie sous-station inspirée d'images de référence de poste électrique. L'utilisateur n'est pas satisfait de la version actuelle, jugée trop générique, trop compacte, avec des icônes peu réalistes et des câbles qui ne touchent pas correctement les équipements.
+
+Contraintes:
+- Ne pas modifier le backend pour ajouter des commandes PLC. Le viewer reste READ-ONLY.
+- Conserver le fond sombre validé.
+- Modifier surtout frontend/static/index.html.
+- Garder la topologie Station B: arrivée ligne HT, sectionneur ligne, disjoncteur principal, sectionneur barre, jeu de barres HT, deux transformateurs, bâtiment/tableau MT, deux départs.
+- Les équipements doivent être plus espacés pour mieux respirer visuellement et permettre les déplacements caméra.
+- Les formes/icônes 3D doivent être plus réalistes: portique d'arrivée, clôture/grillage, structures de sectionneur plus crédibles, disjoncteurs mieux représentés, transformateurs avec traversées/radiateurs/bac de rétention, bâtiment/cellules MT, départs et supports.
+- Les liaisons conducteurs et câbles doivent visuellement toucher les équipements aux points de raccordement plausibles.
+- Garder si possible la sélection au clic et le panneau de sélection.
+- Éviter les erreurs JS/HTML évidentes.
+
+Tâches:
+1. Refaire la composition spatiale pour espacer clairement les équipements.
+2. Refaire les objets 3D simplifiés mais plus réalistes.
+3. Corriger les liaisons conducteurs/câbles.
+4. Conserver l'UI de droite, éventuellement légèrement simplifiée si nécessaire.
+5. Donner à la fin un bref résumé des changements effectués.
+
+Quand complètement fini, exécute exactement:
+openclaw system event --text "Done: refonte visuelle du viewer 3D Station B plus réaliste et espacée" --mode now
