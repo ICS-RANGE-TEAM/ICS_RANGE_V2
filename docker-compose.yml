@@ -71,7 +71,7 @@ services:
       PLC_HOST: 192.168.20.10
       PLC_PORT: 502
     volumes:
-      - "./runtime-assets/viewer3d-station-b/electrical_substation:/app/static/assets/extracted/electrical_substation:ro"
+      - "./viewer3d-station-b/frontend/static/assets/extracted/electrical_substation:/app/static/assets/extracted/electrical_substation:ro"
     healthcheck:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8090/api/status')"]
       interval: 30s

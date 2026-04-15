@@ -1,15 +1,14 @@
 {
     "language": "en",
     "uiPort": 1881,
-    "secureEnabled": false,
-    "tokenExpiresIn": "",
+    "secureEnabled": true,
+    "tokenExpiresIn": "1h",
     "broadcastAll": false,
     "smtp": {
         "host": "",
         "port": 587,
         "mailsender": "",
-        "username": "",
-        "password": ""
+        "username": ""
     },
     "daqstore": {
         "type": "influxDB",
