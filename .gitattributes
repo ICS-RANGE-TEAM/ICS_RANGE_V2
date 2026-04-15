@@ -1,3 +1,5 @@
+*.dae filter=lfs diff=lfs merge=lfs -text
+*.glb filter=lfs diff=lfs merge=lfs -text
 viewer3d-station-b/frontend/static/assets/extracted/electrical_substation/model.dae filter=lfs diff=lfs merge=lfs -text
 viewer3d-station-b/frontend/static/assets/extracted/electrical_substation/model-converted-
 [[:space:]][[:space:]]raw.glb filter=lfs diff=lfs merge=lfs -text
